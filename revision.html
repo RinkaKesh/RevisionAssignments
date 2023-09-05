@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturing and Displaying Form Data using DOM Manipulation</title>
+</head>
+<style>
+    p{
+        font-size:24px;
+    }
+</style>
+<body>
+    <input id="myInput" type="text">
+    <button onclick="clickMe()" id="myButton">Submit</button>
+    <p id="pTag"></p>
+    
+</body>
+<script>
+    function clickMe(){
+        P=document.getElementById("pTag");
+        Input=document.getElementById("myInput").value;
+        alert(Input);
+        P.innerText="Entered Value : " +Input;
+    }
+</script>
+</html>
